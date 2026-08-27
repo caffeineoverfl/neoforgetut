@@ -1,5 +1,6 @@
 package io.github.caffeineoverfl.neoforgetut;
 
+import io.github.caffeineoverfl.neoforgetut.item.ModCreativeModeTabs;
 import io.github.caffeineoverfl.neoforgetut.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,8 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
 
         ModItems.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
