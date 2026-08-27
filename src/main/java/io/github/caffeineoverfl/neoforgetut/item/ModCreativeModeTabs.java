@@ -1,6 +1,7 @@
 package io.github.caffeineoverfl.neoforgetut.item;
 
 import io.github.caffeineoverfl.neoforgetut.TutorialMod;
+import io.github.caffeineoverfl.neoforgetut.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -28,11 +29,11 @@ public class ModCreativeModeTabs {
 
     public static Supplier<CreativeModeTab> BLACK_OPAL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("black_opal_blocks_tab",() -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.neoforgetut.black_opal_blocks_tab"))
-            .icon(() -> new ItemStack(ModItems.RAW_BLACK_OPAL.get()))
+            .icon(() -> new ItemStack(ModBlocks.BLACK_OPAL_BLOCK.get()))
             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "black_opal_items_tab"))
             .displayItems((pParameters, pOutput) -> {
-                pOutput.accept(Blocks.BAMBOO_BLOCK);
-                pOutput.accept(Blocks.DEEPSLATE);
+                pOutput.accept(ModBlocks.BLACK_OPAL_BLOCK);
+                pOutput.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK);
             }).build());
 
     public static void register(IEventBus eventBus){
