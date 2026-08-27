@@ -34,6 +34,10 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModBlocks.BLACK_OPAL_BLOCK);
                 pOutput.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK);
+                pOutput.accept(ModBlocks.BLACK_OPAL_ORE);
+                pOutput.accept(ModBlocks.BLACK_OPAL_END_ORE);
+                pOutput.accept(ModBlocks.BLACK_OPAL_DEEPSLATE_ORE);
+                pOutput.accept(ModBlocks.BLACK_OPAL_NETHER_ORE);
             }).build());
 
     public static void register(IEventBus eventBus){
