@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.BLACK_OPAL);
                 pOutput.accept(ModItems.RAW_BLACK_OPAL);
+
+                pOutput.accept(ModItems.CHAINSAW);
             }).build());
 
 
