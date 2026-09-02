@@ -1,6 +1,7 @@
 package io.github.caffeineoverfl.neoforgetut.block;
 
 import io.github.caffeineoverfl.neoforgetut.TutorialMod;
+import io.github.caffeineoverfl.neoforgetut.block.custom.MagicBlock;
 import io.github.caffeineoverfl.neoforgetut.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -38,6 +39,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,5),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
 
 
